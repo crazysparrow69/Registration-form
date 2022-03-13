@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration form</title>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Number of clients: 0</h1>
+    <ul></ul> 
+  </div>
+
+  <div id="main-div">
+    <form id="registration-form" method="post">
+      <div class="div">
+        <input type="text" name="name" placeholder="Имя" id="name">
+        <div class="help">Your name must consist of 2-50 symbols and must not include symbols such as %, &, #, etc.</div>
+      </div>
+
+      <div class="div">
+        <input type="password" name="password" placeholder="Пароль" id="password">
+        <div class="help">8-50 symbols, at least one numeral, one lowercase and one uppercase letter.</div>
+      </div>
+        
+      <div class="div2">
+        <input type="password" name="repassword" placeholder="Подтвердите пароль" id="repassword">
+        <div class="help2"><p id="confirm-p">Write carefully.</p></div>
+      </div>
+
+      <div class="div">
+        <input type="radio" name="gender" id="male" value="Мужской">
+        <label for="male" class="label-sex">Мужской</label>
+        <input type="radio" name="gender" id="female" value="Женский">
+        <label for="female" class="label-sex">Женский</label>
+      </div>
+      <input type="submit" name="submit" value="Регистрация" id="submit">
+    </form>
+
+    <form id="sign-in-form" method="post">
+      <div id="main-div">
+        <div class="div">
+          <input type="text" name="name" placeholder="Имя" id="sname">
+        </div>
+
+        <div class="div">
+          <input type="password" name="password" placeholder="Пароль" id="spassword">
+        </div>
+
+        <input type="submit" name="submit" value="Войти" id="ssubmit">
+      </div>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
